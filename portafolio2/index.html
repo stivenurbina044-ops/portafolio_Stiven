@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stiven García · Desarrollador Web</title>
+<meta name="description" content="Portafolio de Stiven García — desarrollo web, formación técnica y proyectos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-brand">
+      <span class="nav-brand-mark">SG</span>
+      <span class="nav-brand-status"><span class="dot"></span>disponible</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#inicio"><span class="tag">00</span>Inicio</a>
+      <a href="#sobre-mi"><span class="tag">01</span>Sobre mí</a>
+      <a href="#proyectos"><span class="tag">02</span>Proyectos</a>
+      <a href="#contacto"><span class="tag">03</span>Contacto</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- INICIO -->
+  <section id="inicio" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">// 00 · inicio</p>
+        <h1>Stiven García</h1>
+        <p class="hero-role">Desarrollador Web Junior — Front-End</p>
+        <p class="hero-desc">
+          Estudiante técnico construyendo interfaces claras y funcionales.
+          Aprendiendo a diario para aportar valor real a equipos de producto
+          y tecnología.
+        </p>
+        <div class="hero-cta">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost">Contactar</a>
+        </div>
+      </div>
+
+      <div class="status-card" role="img" aria-label="Panel de estado con las habilidades principales">
+        <div class="status-card-head">
+          <span class="status-card-title">panel_perfil</span>
+          <span class="status-card-live"><span class="dot"></span>online</span>
+        </div>
+        <ul class="status-list">
+          <li><span>HTML / CSS</span><div class="bar"><i style="width:88%"></i></div></li>
+          <li><span>JavaScript</span><div class="bar"><i style="width:70%"></i></div></li>
+          <li><span>React</span><div class="bar"><i style="width:55%"></i></div></li>
+          <li><span>Trabajo en equipo</span><div class="bar"><i style="width:90%"></i></div></li>
+        </ul>
+        <div class="status-card-foot">
+          <span>última_actualización:</span>
+          <span id="statusDate">jul 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="section about">
+    <p class="eyebrow">// 01 · sobre mí</p>
+    <div class="about-grid">
+      <div class="about-photo-wrap">
+        <div class="about-photo">
+          <img src="assets/foto-perfil.png" alt="Foto de Stiven García">
+        </div>
+        <div class="about-photo-tag">
+          <span class="tag">est.</span> IETDH — Medical Duarte
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h2>Quién soy</h2>
+        <p>
+          Soy Stiven García, estudiante técnico en formación de la IETDH
+          Medical Duarte. Me interesa el desarrollo web porque combina
+          lógica, diseño y resolución de problemas reales. Estoy construyendo
+          mi base en HTML, CSS, JavaScript y explorando React para seguir
+          creciendo como desarrollador.
+        </p>
+        <p>
+          Busco mi primera oportunidad laboral en tecnología, en un equipo
+          donde pueda seguir aprendiendo, aportar con responsabilidad y
+          crecer junto a personas con más experiencia.
+        </p>
+
+        <div class="about-cols">
+          <div class="about-col">
+            <h3><span class="tag">01</span>Formación</h3>
+            <ul class="plain-list">
+              <li>
+                <strong>IETDH — Medical Duarte</strong>
+                <span>Técnico en formación</span>
+              </li>
+              <li>
+                <strong>Formación en desarrollo web</strong>
+                <span>HTML, CSS, JavaScript, React</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-col">
+            <h3><span class="tag">02</span>Habilidades</h3>
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Git / GitHub</span>
+              <span>Resolución de problemas</span>
+              <span>Trabajo en equipo</span>
+              <span>Atención al detalle</span>
+            </div>
+          </div>
+
+          <div class="about-col">
+            <h3><span class="tag">03</span>Hobbies</h3>
+            <ul class="plain-list">
+              <li><strong>Programación por gusto propio</strong><span>Proyectos personales fuera de clase</span></li>
+              <li><strong>Tecnología y aprendizaje continuo</strong><span>Cursos y documentación</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="section projects">
+    <p class="eyebrow">// 02 · proyectos</p>
+    <h2>Trabajos recientes</h2>
+    <p class="section-desc">
+      Una muestra de los proyectos en los que he practicado maquetación,
+      lógica en JavaScript y estructura de interfaces.
+    </p>
+
+    <div class="project-list">
+
+      <article class="project-card">
+        <div class="project-index">01</div>
+        <div class="project-body">
+          <h3>Acme · Gestión de producción — Macondo</h3>
+          <p>
+            Interfaz web pensada para apoyar la gestión de producción de una
+            planta ficticia llamada Macondo: organización de procesos e
+            información en pantalla de forma clara y ordenada.
+          </p>
+          <div class="project-meta">
+            <span class="skill-pill">HTML</span>
+            <span class="skill-pill">CSS</span>
+            <span class="skill-pill">JavaScript</span>
+          </div>
+        </div>
+        <a class="project-link" href="https://stivenurbina044-ops.github.io/ACME-Produccion-Macondo/" target="_blank" rel="noopener noreferrer">
+          Ver proyecto <span aria-hidden="true">↗</span>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section contact">
+    <p class="eyebrow">// 03 · contacto</p>
+    <div class="contact-grid">
+      <div class="contact-text">
+        <h2>Hablemos</h2>
+        <p>
+          ¿Tienes una oportunidad, una pasantía o un proyecto en mente?
+          Escríbeme y te respondo lo antes posible.
+        </p>
+        <ul class="contact-list">
+          <li>
+            <span class="tag">mail</span>
+            <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>
+          </li>
+          <li>
+            <span class="tag">git</span>
+            <a href="https://github.com/stivenurbina044-ops" target="_blank" rel="noopener noreferrer">github.com/stivenurbina044-ops</a>
+          </li>
+          <li>
+            <span class="tag">loc</span>
+            <span>Cúcuta, Norte de Santander, Colombia</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" placeholder="Cuéntame en qué puedo ayudarte" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Stiven García · Desarrollador Web Junior</p>
+  <p class="footer-sub">Construido con HTML, CSS y JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
